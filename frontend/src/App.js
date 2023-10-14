@@ -32,7 +32,7 @@ function App() {
                         <li key={commit.sha} className="text-primary mb-2">
                             <strong className="font-bold">{commit.committer.login}:</strong> {commit.commit.message}
                         </li>
-                    ))}
+                    ))} 
                 </ul>
                 <img src={logo} className="w-32 h-32 mt-8" alt="logo" />
                 <p className="text-primary text-sm">
