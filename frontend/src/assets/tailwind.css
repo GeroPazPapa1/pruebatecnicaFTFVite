@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fondo de página */
+.bg-custom-bg {
+    background-color: #f2c84c00; /* Cambia el color de fondo según tus preferencias */
+    background-image: url('background.jpeg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo en su lugar */
+
+    @media (max-width: 768px) {
+        background-attachment: scroll; /* Cambia a desplazamiento para pantallas pequeñas */
+    }
+}
+
+/* Texto personalizado */
+.text-primary {
+    color: #f9f9f9; /* Cambia el color de texto según tus preferencias */
+    text-align: center;
+    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    @media (max-width: 768px) {
+        font-size: 1.5rem; /* Tamaño de fuente más grande para pantallas pequeñas */
+    }
+}
+
+/* Fuente en negrita personalizada */
+.font-bold {
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+        font-weight: 600; /* Reduce el peso de la fuente para pantallas pequeñas */
+    }
+}
+
+/* Efecto de escala al pasar el ratón (hover) */
+.hover-scale {
+    transition: transform 0.3s ease;
+
+    @media (max-width: 768px) {
+        transform: scale(1); /* Deshabilita el efecto de escala en pantallas pequeñas */
+    }
+}
+
+/* Animación de pulso */
+.animate-pulse {
+    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            animation: none; /* Deshabilita la animación de pulso en pantallas pequeñas */
+        }
+    }
+}
