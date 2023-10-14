@@ -7,6 +7,6 @@ async function bootstrap() {
   // Configura CORS para permitir solicitudes desde el origen del frontend
   app.enableCors();
 
-  await app.listen(3000);
+  await app.listen(3000); // el puerto escuchando correctamente
 }
 bootstrap();
