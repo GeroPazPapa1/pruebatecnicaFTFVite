@@ -9,7 +9,7 @@
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
         background-size: contain; 
@@ -20,11 +20,6 @@
 
 .text-primary {
     color: #f9f9f9; 
-    text-align: center;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    text-align: left;
     /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
         font-size: 1.5rem; 
