@@ -4,25 +4,25 @@
 
 /* Background */
 .bg-custom-bg {
-    background-color: #f2c84c00; 
-    background-image: url('background.jpeg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+    background-color: #f2c84c00;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 1.1rem;
+
     /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
-        background-size: contain; 
-        background-attachment: scroll; 
+        background-size: cover;
     }
 }
 
-
 .text-primary {
-    color: #f9f9f9; 
+    color: #f9f9f9;
+
     /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
-        font-size: 1.5rem; 
+        font-size: 1.2rem;
     }
 }
 
@@ -32,6 +32,6 @@
 
     /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
-        font-weight: 600; /* Reduce el peso de la fuente para pantallas pequeñas */
+        font-weight: 600;
     }
 }
