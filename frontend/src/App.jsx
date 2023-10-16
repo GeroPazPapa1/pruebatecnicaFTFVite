@@ -3,11 +3,11 @@ import logo from './logo.svg';
 import './assets/tailwind.css';
 
 function App() {
-    const [commits, setCommits] = useState([]); // Inicializa commits como un arreglo vacío
+    const [commits, setCommits] = useState([]); 
 
     useEffect(() => {
         // Realiza una solicitud al servidor backend para obtener los commits
-        fetch('http://localhost:3000/api/commits') // Reemplaza la URL con la ruta correcta de tu servidor
+        fetch('http://localhost:3000/api/commits') 
             .then(response => response.json())
             .then(data => {
                 // Verifica que "data" sea un arreglo antes de actualizar el estado
@@ -36,16 +36,8 @@ function App() {
                 </ul>
                 <img src={logo} className="w-32 h-32 mt-8" alt="logo" />
                 <p className="text-primary text-sm">
-                    Realizado por Geronimo Nicolas Paz Papa <code className="font-bold"></code>
+                    Realizado por Geronimo Nicolas Paz Papa. ¡Gracias por la oportunidad! <code className="font-bold"></code>
                 </p>
-                {/*<a
-                    className="text-blue-500 text-sm mt-4 hover:underline"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                    </a>*/}
             </header>
         </div>
     );

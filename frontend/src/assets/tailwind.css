@@ -4,22 +4,22 @@
 
 /* Background */
 .bg-custom-bg {
-    background-color: #f2c84c00; /* Cambia el color de fondo según tus preferencias */
-    background-image: url('background.jpeg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo en su lugar */
+    background-color: #f2c84c00; 
+    background-image: url('background.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     font-size: 1.2rem;
     /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
-        background-size: contain; /* Redimensiona la imagen para ajustarse al contenedor */
-        background-attachment: scroll; /* Cambia a desplazamiento para pantallas pequeñas */
+        background-size: contain; 
+        background-attachment: scroll; 
     }
 }
 
-/* Texto personalizado */
+
 .text-primary {
-    color: #f9f9f9; /* Cambia el color de texto según tus preferencias */
+    color: #f9f9f9; 
     text-align: center;
     display: flex;
     flex-direction:row;
@@ -27,7 +27,7 @@
     text-align: left;
     /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
-        font-size: 1.5rem; /* Tamaño de fuente más grande para pantallas pequeñas */
+        font-size: 1.5rem; 
     }
 }
 
