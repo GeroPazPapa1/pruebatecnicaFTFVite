@@ -10,6 +10,7 @@
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed; /* Fija la imagen de fondo en su lugar */
 
+    /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
         background-attachment: scroll; /* Cambia a desplazamiento para pantallas pequeñas */
     }
@@ -19,6 +20,8 @@
 .text-primary {
     color: #f9f9f9; /* Cambia el color de texto según tus preferencias */
     text-align: center;
+
+    /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
         font-size: 1.5rem; /* Tamaño de fuente más grande para pantallas pequeñas */
     }
@@ -28,8 +31,8 @@
 .font-bold {
     font-weight: 700;
 
+    /* Regla responsive para pantallas pequeñas */
     @media (max-width: 768px) {
         font-weight: 600; /* Reduce el peso de la fuente para pantallas pequeñas */
     }
 }
-
