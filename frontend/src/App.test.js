@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from '../App'; // Asegúrate de que la ruta sea correcta
+import App from './App.jsx'; // Asegúrate de que la ruta sea correcta
 
 test('debería renderizar la lista de commits', async () => {
   render(<App />);

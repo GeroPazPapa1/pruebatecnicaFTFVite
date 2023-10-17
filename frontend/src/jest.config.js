@@ -1,6 +1,13 @@
 module.exports = {
-    testEnvironment: "jsdom", // Entorno de pruebas para React
-    testMatch: ["**/__tests__/**/*.js", "**/?(*.)+(test).js"], // Patrón para identificar archivos de prueba
-    setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"], // Extiende las capacidades de expect()
+    testEnvironment: "jsdom",
+    testMatch: ["**/__tests__/**/*.js", "**/?(*.)+(test).js"],
+    setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
+    transform: {
+      "^.+\\.(js|jsx)$": "babel-jest",
+    },
+    transformIgnorePatterns: ["<rootDir>/node_modules/"],
+    moduleNameMapper: {
+      "\\.(svg)$": "<rootDir>/path/to/empty-module.js", // Ruta al módulo vacío
+    },
   };
   
